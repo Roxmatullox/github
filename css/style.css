@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #040D21;
+}
+
+.title h1 {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+.search-section {
+  width: 100%;
+  padding: 20px;
+}
+.search-section input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.git-users {
+  padding: 20px;
+}
+.git-users .users-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 1100px) {
+  .git-users .users-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 890px) {
+  .git-users .users-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 670px) {
+  .git-users .users-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 470px) {
+  .git-users .users-container {
+    grid-template-columns: 1fr;
+  }
+}
+.git-users .users-container > div {
+  border-radius: 6px;
+  border: 1px solid #30363D;
+}
+.git-users .users-container > div img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+.git-users .users-container > div div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.git-users .users-container > div > * {
+  color: white;
+}
+
+.profile-div {
+  height: 100vh;
+  padding: 20px;
+}
+.profile-div .profile {
+  max-width: 600px;
+  height: 100%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  border: 1px solid #30363D;
+}
+.profile-div .profile img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.profile-div .profile .profile-text {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.profile-div .profile .profile-text > div {
+  display: flex;
+  gap: 10px;
+}
+.profile-div .profile .profile-text > * {
+  color: white;
+}
+
+.pagination {
+  padding: 20px;
+}
+.pagination button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-color: white;
+  background-color: orangered;
+  color: white;
+}
